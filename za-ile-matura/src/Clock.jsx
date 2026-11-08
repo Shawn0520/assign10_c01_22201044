@@ -6,7 +6,7 @@ import Footer from "./Footer.jsx";
 function Clock() {
   const year = new Date().getFullYear() + 1;
   const calcTimeLeft = () => {
-    let diff = new Date(`05/04/${year}`) - new Date();
+    let diff = new Date(`01/01/${year}`) - new Date();
     let timeLeft = {};
 
     if (diff > 0) {
