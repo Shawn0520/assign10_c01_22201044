@@ -35,13 +35,13 @@ function Clock() {
   });
   const element = (
     <div className="flex flex-col gap-4 text-center m-2">
-      <h1 className="text-4xl">Do matury {year} pozostalo: </h1>
+      <h1 className="text-4xl">Countdown to {year}:</h1>
       <BigCard item={timeLeft} />
-      <h1 className="text-4xl">Lub:</h1>
+      <h1 className="text-4xl">Detail:</h1>
       <div className="flex flex-col gap-4">
-        <Card item={timeLeft.hoursFull} text="Godzin" />
-        <Card item={timeLeft.minutesFull} text="minut" />
-        <Card item={timeLeft.secondsFull} text="sekund" />
+        <Card item={timeLeft.hoursFull} text="Hours" />
+        <Card item={timeLeft.minutesFull} text="Minutes" />
+        <Card item={timeLeft.secondsFull} text="Seconds" />
       </div>
       <Footer classname="pos" />
     </div>
